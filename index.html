@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(11, 11, 11);
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 10vh 70vh 20vh;
+            grid-template-areas: "header header " "section1 section2" "footer footer ";
+            grid-gap: 20px;
+        }
+        .header{
+            background-color: rgb(37, 2, 23);
+            grid-area: header;
+            color: rgb(222, 219, 219);
+        }
+        .section1{
+            background-color: rgb(77, 3, 43);
+            grid-area: section1;
+            padding: 50px;
+            color: white;
+        }
+        .section2{
+            background-color: rgb(77, 3, 43);
+            grid-area: section2;
+            padding: 50px;
+            color: white;
+        }
+       
+        .footer{
+                    background-color: rgb(37, 2, 23);
+                    grid-area: footer;
+                    color: white;
+                }
+                p{
+                    text-align: center;
+                    font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;              
+              }
+              h1{
+                text-align: center;
+              }
+              h3{
+                text-align: center;
+              }
+              article{
+                text-align: center;
+                background-color: rgb(195, 12, 192);
+                width: 200px;
+                height: 200px;
+                align-content: center;
+                /* position: relative;
+                left: 100px;
+                /* top: 50px; */
+              } 
+              section{
+                
+                text-align: center;
+                background-color: rgb(195, 12, 192);
+                width: 200px;
+                height: 200px;
+                align-content: center;
+                /* position: relative;
+                left: 100px;
+                top: 50px; */
+              }
+           @media screen and (max-width: 300px) {
+            .container {
+                background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 10vh 70vh 20vh;
+            grid-template-areas: "header header " "section1 section2" "footer footer ";
+            grid-gap: 20px;
+                }
+            
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header"><h1> Html Header</h1></div>
+        <div class="section1"><p>Main Content</p>
+        <article>
+         <img src="mysterious-fantasy-forest-with-old-bridges-free-image (1).webp" alt="" width="200px" height="200px">  
+         This is the main content of an article. 
+        </article>
+        </div>
+        <div class="section2"><p>Side Content</p>
+        <section>
+            <img src="istockphoto-1317323736-612x612.jpg" alt="" width="200px" height="200px">
+            This is the side content of a section.
+        </section>
+        </div>
+        
+        <div class="footer"><h3>© 2024 Semantic Layout <br> All rights reserved</h3></div>
+    </div>
+</body>
+</html>
